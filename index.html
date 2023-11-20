@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Jura&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="baseContainer">
+        <!--main boundary-->
+        <div class="base" data-depth="0.00">
+
+            <!--Top right heading inside base div-->
+            <div class="topRightHeading" data-depth="1.00">
+                SERVICE RECORD
+            </div>
+
+            <!--list-->
+            <ul data-depth="1.00">
+                <li>CAMPAIGN</li>
+                <li>ARENA</li>
+                <li>WARZONE</li>
+                <li>CUSTOM GAME</li>
+            </ul>
+
+            <!--circular progress bar-1-->
+            <div class="prog-1">
+                <div class="c100 p80 big">
+                    <span>80%</span>
+                    <div class="slice">
+                        <div class="bar"></div>
+                        <div class="fill"></div>
+                    </div>
+                </div>
+            </div>
+            <!--circular progress bar-1-->
+            <div class="prog-2">
+                <div class="c100 p25 big">
+                    <span>25%</span>
+                    <div class="slice">
+                        <div class="bar"></div>
+                        <div class="fill"></div>
+                    </div>
+                </div>
+            </div>
+            <!--circular progress bar-1-->
+            <div class="prog-3">
+                <div class="c100 p100 big">
+                    <span>100%</span>
+                    <div class="slice">
+                        <div class="bar"></div>
+                        <div class="fill"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+         <!--top margin line-->
+         <hr id="line" data-depth="1.00">        
+    </div>
+
+     <!-- Scripts -->
+     <script src="js/parallax.js"></script>
+     <script>
+         var scene = document.querySelector('.scene');
+         var parallax = new Parallax(scene);
+     </script>
+
+</body>
+</html>
